@@ -24,6 +24,7 @@
 ![Counter Strike Logo](https://github.com/ew3g/csgo-market-crawler/blob/main/csgo-icon.png?raw=true "Sample inline image")
 
 This project is a web crawler that retrieves items from CSGO Steam Market and store them in a Mongo Database
+</div>
 
 Items available:
 * Knives
