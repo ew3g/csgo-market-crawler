@@ -1,6 +1,6 @@
 # CSGO Market Crawler
 
-![Counter Strike Logo](https://www.python.org/static/community_logos/python-logo.png "Sample inline image")
+![Counter Strike Logo](https://github.com/ew3g/csgo-market-crawler/main/csgo-icon.png?raw=true "Sample inline image")
 
 A sample project that exists as an aid to the [Python Packaging User
 Guide][packaging guide]'s [Tutorial on Packaging and Distributing
@@ -37,3 +37,7 @@ may be appropriate.
 [rst]: http://docutils.sourceforge.net/rst.html
 [md]: https://tools.ietf.org/html/rfc7764#section-3.5 "CommonMark variant"
 [md use]: https://packaging.python.org/specifications/core-metadata/#description-content-type-optional
+
+<!--
+<a href="https://www.freeiconspng.com/img/42849">Csgo .ico</a>
+-->
