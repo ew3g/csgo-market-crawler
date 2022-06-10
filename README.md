@@ -26,14 +26,14 @@
 This project is a web crawler that retrieves items from CSGO Steam Market and store them in a Mongo Database
 
 Items available:
-    * Knives
-    * Pistols
-    * Rifles
-    * Shotguns
-    * Snipers
-    * Machineguns
-    * Smgs
-    * Gloves
+* Knives
+* Pistols
+* Rifles
+* Shotguns
+* Snipers
+* Machineguns
+* Smgs
+* Gloves
 
 
 <!--
