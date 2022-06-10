@@ -89,7 +89,7 @@ And the following subtypes:
 
 The crawler script creates the environment variables from the .env file and uses them to control the pages of the market for each item subtype.
 
-**It's important to notice that the Steam Web Api blocks the access for some time if many requests are made, so the script will wait a random time between 10 and 30 seconds**
+**It's important to notice that the Steam Web Api blocks the access for some time if many requests are made, so the script will wait a random time between 10 and 30 seconds.**
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
