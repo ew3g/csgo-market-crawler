@@ -27,20 +27,47 @@ This project is a web crawler that retrieves items from CSGO Steam Market and st
 
 Items available: Knives • Pistols • Rifles • Shotguns • Snipers • Machineguns • Smgs • Gloves
 
-[Getting started](#getting-started) •
 [Installation](#installation) •
 [Configuration](#configuration) •
 [Integrations](#third-party-integrations)
 </div>
 
+## Installation
+- Get a Steam Api Key, following these [instructions](https://cran.r-project.org/web/packages/CSGo/vignettes/auth.html).
+- Use package manager [pip](https://pip.pypa.io/en/stable/) to install all needed libs
+```bash pip install -r requirements.txt```
+- Create the file .env in the project root folder with the following content:
+```
+STEAM_API_KEY='PLACE YOU STEAM API KEY HERE'
+LAST_PROCESSED_PAGE_KNIFE='-1'
+LAST_PROCESSED_PAGE_PISTOL='-1'
+LAST_PROCESSED_PAGE_RIFLE='-1'
+LAST_PROCESSED_PAGE_SHOTGUN='-1'
+LAST_PROCESSED_PAGE_SNIPER='-1'
+LAST_PROCESSED_PAGE_MACHINEGUN='-1'
+LAST_PROCESSED_PAGE_SMG='-1'
+LAST_PROCESSED_PAGE_GLOVE='-1'
+BATCH_SIZE=50
+LAST_PROCESSED_PAGE='1'
+DATABASE_PASSWORD='PLACE YOUR DATABASE PASSWORD HERE'
+DATABASE_USER='PLACE YOUR DATABASE PASSWORD HERE'
+DATABASE_URL='mongodb+srv://USER:PASSWORD@HOST/DATABASE?retryWrites=true&w=majority'
+LOG_LEVEL='INFO'
+```  
 
+## Usage
+```
+python crawler.py
+```
 
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
+## License
+[The MIT License (MIT)](https://mit-license.org/)
 
--->
-<a href="https://www.freeiconspng.com/img/42849">Csgo .ico</a>
-https://www.flaticon.com/free-icon/web_1792126#
+## Thanking
 
-https://github.com/ajeetdsouza/zoxide/blob/main/README.md
+CSGO png image for the project icon [csgo-icon](https://www.freeiconspng.com/img/42849). Credits to Ahkâm.
 
-<!--
+Crawler png image for the project icon [crawler-icon](https://pypi.org/project/schedule/) lib. Credits to [Dan Bader](https://github.com/dbader).
