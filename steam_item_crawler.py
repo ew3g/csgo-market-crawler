@@ -67,7 +67,7 @@ class SteamItemCrawler():
         for i in range(page_to_process * self.batch_size, total_items+self.batch_size, self.batch_size):
             Timer.pause(random.uniform(10, 30))
        
-            page_to_process = math.ceil(i / 50)
+            page_to_process = math.ceil(i / self.batch_size)
             dotenv.set_key('.env', control_env_variable_processed_page, str(page_to_process))
 
             batch_start = i
