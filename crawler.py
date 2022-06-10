@@ -38,7 +38,7 @@ def get_config_parameters(item_subtype):
                                             item_query='&category_730_Type[]=tag_CSGO_Type_SMG', item_type='weapon', item_subtype='smg')
     elif ItemSubType.GLOVE == item_subtype:
         config_parameters = ConfigParameters(page_control_var_name='LAST_PROCESSED_PAGE_GLOVE', 
-                                            item_query='LAST_PROCESSED_PAGE_GLOVE', item_type='weapon', item_subtype='glove')
+                                            item_query='LAST_PROCESSED_PAGE_GLOVE', item_type='hands', item_subtype='glove')
     return config_parameters
 
 def crawl(config_parameters: ConfigParameters):    

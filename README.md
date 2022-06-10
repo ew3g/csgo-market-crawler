@@ -87,6 +87,10 @@ And the following subtypes:
 - Hand Type
   - Glove
 
+The crawler script creates the environment variables from the .env file and uses them to control the pages of the market for each item subtype.
+
+**It's important to notice that the Steam Web Api blocks the access for some time if many requests are made, so the script will wait a random time between 10 and 30 seconds**
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -97,4 +101,4 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 CSGO png image for the project icon [csgo-icon](https://www.freeiconspng.com/img/42849). Credits to Ahkâm.
 
-Crawler png image for the project icon [crawler-icon](https://pypi.org/project/schedule/) lib. Credits to [Dan Bader](https://github.com/dbader).
+Crawler png image for the project icon [crawler-icon](https://www.flaticon.com/free-icon/web_1792126). Credits to [Pixelmeetup](https://www.flaticon.com/authors/pixelmeetup).
