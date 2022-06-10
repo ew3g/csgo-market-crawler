@@ -27,16 +27,17 @@ This project is a web crawler that retrieves items from CSGO Steam Market and st
 
 Items available: Knives • Pistols • Rifles • Shotguns • Snipers • Machineguns • Smgs • Gloves
 
-[Installation](#installation) •
-[Configuration](#configuration) •
-[Integrations](#third-party-integrations)
+[Installation](#installation) • [Usage](#usage) •
 </div>
 
 ## Installation
+- Set up a MongoDB database, i used a free tier [Atlas MongoDB](https://www.mongodb.com/atlas/database).
 - Get a Steam Api Key, following these [instructions](https://cran.r-project.org/web/packages/CSGo/vignettes/auth.html).
 - Use package manager [pip](https://pip.pypa.io/en/stable/) to install all needed libs
 ```bash pip install -r requirements.txt```
+
 - Create the file .env in the project root folder with the following content:
+
 ```
 STEAM_API_KEY='PLACE YOU STEAM API KEY HERE'
 LAST_PROCESSED_PAGE_KNIFE='-1'
@@ -56,9 +57,35 @@ LOG_LEVEL='INFO'
 ```  
 
 ## Usage
+To run this project is very simple, you need to run the crawler script. 
 ```
 python crawler.py
 ```
+
+It will crawl through Steam Market and store the itens in the collection named item with the following structure:
+```
+{
+  "name":"★ Bowie Knife | Case Hardened (Well-Worn)",
+  "type":"weapon",
+  "subtype":"knife",
+  "game_type":"★ Covert Knife"
+}
+```
+There are two possible types for the items:
+- Weapon
+- Hand
+
+And the following subtypes:
+- Weapon Type
+  - Knife
+  - Pistol
+  - Rifle
+  - Shotgun
+  - Sniper
+  - Machinegun
+  - Smg
+- Hand Type
+  - Glove
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
