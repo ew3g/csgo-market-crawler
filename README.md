@@ -1,6 +1,6 @@
 # CSGO Market Crawler
 
-![Counter Strike Logo](https://github.com/ew3g/csgo-market-crawler/main/csgo-icon.png?raw=true "Sample inline image")
+![Counter Strike Logo](https://github.com/ew3g/csgo-market-crawler/blob/main/csgo-icon.png?raw=true "Sample inline image")
 
 A sample project that exists as an aid to the [Python Packaging User
 Guide][packaging guide]'s [Tutorial on Packaging and Distributing
