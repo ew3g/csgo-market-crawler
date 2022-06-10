@@ -73,7 +73,7 @@ It will crawl through Steam Market and store the itens in the collection named i
 ```
 There are two possible types for the items:
 - Weapon
-- Hand
+- Hands
 
 And the following subtypes:
 - Weapon Type
@@ -84,7 +84,7 @@ And the following subtypes:
   - Sniper
   - Machinegun
   - Smg
-- Hand Type
+- Hands Type
   - Glove
 
 The crawler script creates the environment variables from the .env file and uses them to control the pages of the market for each item subtype.
