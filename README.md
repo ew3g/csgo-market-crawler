@@ -42,7 +42,7 @@ https://www.flaticon.com/free-icon/web_1792126#
 
 https://github.com/ajeetdsouza/zoxide/blob/main/README.md
 -->
-
+<!--
 
 # zoxide
 
@@ -476,3 +476,4 @@ They must be set before `zoxide init` is called.
 [zoxide.vim]: https://github.com/nanotee/zoxide.vim
 [zoxide.xplr]: https://github.com/sayanarijit/zoxide.xplr
 [zsh-autocomplete]: https://github.com/marlonrichert/zsh-autocomplete
+-->
