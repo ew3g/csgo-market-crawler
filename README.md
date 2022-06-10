@@ -27,7 +27,7 @@ This project is a web crawler that retrieves items from CSGO Steam Market and st
 
 Items available: Knives • Pistols • Rifles • Shotguns • Snipers • Machineguns • Smgs • Gloves
 
-[Installation](#installation) • [Usage](#usage) •
+[Installation](#installation) • [Usage](#usage)
 </div>
 
 ## Installation
