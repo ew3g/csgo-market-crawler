@@ -1,7 +1,9 @@
-import time 
+import time
 
-class Timer():
+
+class Timer:
     @staticmethod
     def pause(seconds):
         init_time = time.time()
-        while time.time() < init_time + seconds: pass
+        while time.time() < init_time + seconds:
+            pass

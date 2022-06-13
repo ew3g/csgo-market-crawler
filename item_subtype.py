@@ -1,4 +1,6 @@
 from enum import Enum
+
+
 class ItemSubType(Enum):
     KNIFE = 1
     PISTOL = 2
