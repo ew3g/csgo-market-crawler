@@ -6,7 +6,7 @@ from item_subtype import ItemSubType
 from steam_item_crawler import SteamItemCrawler
 
 dotenv.load_dotenv()
-logging.basicConfig(level=logging._nameToLevel[os.getenv('LOG_LEVEL')])
+logging.basicConfig(level=getattr(logging, os.getenv('LOG_LEVEL')))
 
 
 class ConfigParameters(NamedTuple):
