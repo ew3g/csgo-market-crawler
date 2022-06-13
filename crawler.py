@@ -53,6 +53,7 @@ def get_config_parameters(item_subtype):
 
 
 def crawl(config_parameters: ConfigParameters):
+    logging.info(f'Crawling: {config_parameters.item_subtype}')
     last_processed_page = int(os.getenv(config_parameters.page_control_var_name))
 
     steam_item_crawler = SteamItemCrawler(os.getenv('STEAM_API_KEY'), int(os.getenv('BATCH_SIZE')),

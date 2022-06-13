@@ -23,17 +23,17 @@
 
 ![Counter Strike Logo](https://github.com/ew3g/csgo-market-crawler/blob/main/csgo-icon.png?raw=true "Sample inline image")
 
-This project is a web crawler that retrieves items from CSGO Steam Market and store them in a Mongo Database
+This project is a web crawler that retrieves items from CSGO Steam Market and stores them in a Mongo Database.
 
-Items available: Knives • Pistols • Rifles • Shotguns • Snipers • Machineguns • Smgs • Gloves
+  Items available: Knives • Pistols • Rifles • Shotguns • Snipers • Machineguns • Smgs • Gloves
 
 [Installation](#installation) • [Usage](#usage)
 </div>
 
 ## Installation
-- Set up a MongoDB database, i used a free tier [Atlas MongoDB](https://www.mongodb.com/atlas/database).
-- Get a Steam Api Key, following these [instructions](https://cran.r-project.org/web/packages/CSGo/vignettes/auth.html).
-- Use package manager [pip](https://pip.pypa.io/en/stable/) to install all needed libs
+- Set up a MongoDB database, I used a free tier [Atlas MongoDB](https://www.mongodb.com/atlas/database).
+- Get a Steam API Key, following these [instructions](https://cran.r-project.org/web/packages/CSGo/vignettes/auth.html).
+- Use package manager [pip](https://pip.pypa.io/en/stable/) to install all needed libs.
 ```bash pip install -r requirements.txt```
 
 - Create the file .env in the project root folder with the following content:
@@ -62,7 +62,7 @@ To run this project is very simple, you need to run the crawler script.
 python crawler.py
 ```
 
-It will crawl through Steam Market and store the itens in the collection named item with the following structure:
+It will crawl through Steam Market and store the items in the collection named item with the following structure:
 ```
 {
   "name":"★ Bowie Knife | Case Hardened (Well-Worn)",
@@ -71,7 +71,7 @@ It will crawl through Steam Market and store the itens in the collection named i
   "game_type":"★ Covert Knife"
 }
 ```
-There are two possible types for the items:
+There are two possible types of the items:
 - Weapon
 - Hands
 
@@ -89,7 +89,7 @@ And the following subtypes:
 
 The crawler script creates the environment variables from the .env file and uses them to control the pages of the market for each item subtype.
 
-**It's important to notice that the Steam Web Api blocks the access for some time if many requests are made, so the script will wait a random time between 10 and 30 seconds.**
+**It's important to notice that the Steam Web API blocks the access for some time if many requests are made, so the script will wait a random time between 10 and 30 seconds.**
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
@@ -98,7 +98,6 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 [The MIT License (MIT)](https://mit-license.org/)
 
 ## Thanking
-
 CSGO png image for the project icon [csgo-icon](https://www.freeiconspng.com/img/42849). Credits to Ahkâm.
 
 Crawler png image for the project icon [crawler-icon](https://www.flaticon.com/free-icon/web_1792126). Credits to [Pixelmeetup](https://www.flaticon.com/authors/pixelmeetup).
